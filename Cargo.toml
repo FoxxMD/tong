@@ -1,0 +1,13 @@
+[package]
+name = "tong"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+input = "0.8"
+libc = "0.2.153"
+# https://gitlab.com/somini/inpulse-to-talk/-/commit/897c5cbc98d34b2d81aa9387bc0912dc36abce91#79222ec9407f961ac9710b60f2733df29c143fd6
+# https://github.com/Smithay/input.rs/issues/52#issuecomment-1595401763
+nix = { version = "0.26.2", features = [] }  # Only for polling the fd
